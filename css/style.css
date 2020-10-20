@@ -1,0 +1,9 @@
+* {
+	margin: 0 auto;
+}
+
+.profile-image {
+	height: 100px;
+	width: 100px;
+	background-image: url(/images/IMG_20191027_181637.jpg);
+}
