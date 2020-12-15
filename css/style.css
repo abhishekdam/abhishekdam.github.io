@@ -1,96 +1,14 @@
-/* 
-font families:
-font-family: 'Roboto', sans-serif;
-font-family: 'Quicksand', sans-serif;
-font-family: 'Noto Sans TC', sans-serif;
-*/
-
 * {
-	padding: 0px;
-	margin: 0px;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-	background-color: darkgray;
+.profile-pic {
+  border-radius: 50%;
+  height: 5em;
 }
 
-.main-container {
-	height: 20%;
-	background-color: darkmagenta;
-	margin: 2%;
-	padding: 1%;
-}
-
-#pro-pic {
-	padding: None;
-	margin: None;
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-}
-
-.page-title {
-	font-family: "Roboto", sans-serif;
-	font-weight: 500;
-	font-size: 4em;
-	float: right;
-	margin-top: 0.5%;
-	margin-right: 32.5%;
-}
-
-.page-nav {
-	font-family: Helvetica, sans-serif;
-	font-size: 1.5em;
-	float: right;
-	margin-top: 1%;
-	margin-right: 38%;
-}
-
-.links-edit {
-	color: white;
-	text-decoration: none;
-}
-
-.content-box {
-	margin: 2%;
-	justify-content: center;
-	align-content: center;
-	text-align: center;
-	background-color: darkgoldenrod;
-}
-
-#temp1 {
-	font-family: "Quicksand", sans-serif;
-	font-size: 3.5em;
-	font-weight: 500;
-}
-
-#temp2 {
-	font-family: "Noto Sans TC", sans-serif;
-	font-size: 2em;
-	text-decoration: underline;
-}
-
-#temp3 {
-	font-family: "Noto Sans TC", sans-serif;
-	font-size: 1.5em;
-	font-weight: 300;
-}
-
-.foot {
-	margin: 2%;
-	padding: 2%;
-	justify-content: center;
-	align-content: center;
-	text-align: center;
-	background-color: forestgreen;
-}
-
-.icons {
-	float: left;
-	width: 50%;
-}
-
-.mail-icons {
-	width: 260%;
+.profile-pic-footer {
+  border-radius: 50%;
+  height: 3em;
 }
