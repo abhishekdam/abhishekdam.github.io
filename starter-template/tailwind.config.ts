@@ -24,7 +24,17 @@ const config: Config = {
       fontFamily: {
         sans: 'var(--font-sans)',
         serif: 'var(--font-serif)'
-      }
+      },
+      keyframes: {
+        pingpong: {
+          '40%': { transform: 'translateX(100%)' },
+          '50%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+      },
+      animation: {
+      pingpong: 'pingpong 40s ease-in-out infinite',
+      },
     },
   },
   plugins: [],
