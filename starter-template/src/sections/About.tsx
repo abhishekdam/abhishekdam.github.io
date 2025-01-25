@@ -46,44 +46,44 @@ const hobbies = [
   {
     title: "painting",
     emoji: "🎨",
-    left: "50%",
-    top: "50%",
+    left: "5%",
+    top: "5%",
   },
   {
     title: "Photography",
     emoji: "📸",
-    left: "",
-    top: "",
+    left: "50%",
+    top: "5%",
   },
   {
     title: "Gaming",
     emoji: "🏏",
-    left: "",
-    top: "",
+    left: "10%",
+    top: "35%",
   },
   {
     title: "Hiking",
     emoji: "🥾",
-    left: "",
-    top: "",
+    left: "35%",
+    top: "40%",
   },
   {
     title: "Music",
     emoji: "📻",
-    left: "",
-    top: "",
+    left: "75%",
+    top: "45%",
   },
   {
     title: "Fitness",
     emoji: "🏋️",
-    left: "",
-    top: "",
+    left: "5%",
+    top: "65%",
   },
   {
     title: "Reading",
     emoji: "📖",
-    left: "",
-    top: "",
+    left: "45%",
+    top: "70%",
   },
 ];
 
@@ -121,22 +121,27 @@ export const AboutSection = () => {
               itemsWrapperClassName="-translate-x-1/2"
             />
           </Card>
-          <Card>
+          <Card className="h-[320px] p-0 flex flex-col">
             <Cardheader
               title="Beyond the code"
               description="Explore my interests and hobbies beyond there"
+              className="px-6 py-6"
             />
 
-            <div>
-              {hobbies.map((hobbi) => (
+            <div className="flex-1 relative">
+              {hobbies.map((hobby) => (
                 <div
-                  key={hobbi.title}
-                  className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-yellow-300 to-green-400 rounded-full py-1.5"
+                  key={hobby.title}
+                  className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-yellow-300 to-green-400 rounded-full py-1.5 absolute"
+                  style={{
+                    left: hobby.left,
+                    top: hobby.top,
+                  }}
                 >
                   <span className="font-medium text-gray-950">
-                    {hobbi.title}
+                    {hobby.title}
                   </span>
-                  <span>{hobbi.emoji}</span>
+                  <span>{hobby.emoji}</span>
                 </div>
               ))}
             </div>
