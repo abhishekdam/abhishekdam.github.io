@@ -53,7 +53,9 @@ export const HeroSection = () => {
         <div className="flex flex-col items-center">
           <Image className="size-[100px]" src={memojiimage} alt="pc" />
           <div className="inline-flex items-center gap-4 rounded-lg bg-gray-950 border border-gray-800 px-4 py-1.5">
-            <div className="bg-green-400 size-2.5 rounded-full"></div>
+            <div className="bg-green-400 size-2.5 rounded-full relative">
+              <div className="bg-green-500 absolute inset-0 animate-ping-large rounded-full"></div>
+            </div>
             <div className="text-sm font-medium">
               Available for new Projects
             </div>

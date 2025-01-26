@@ -31,9 +31,16 @@ const config: Config = {
           '50%': { transform: 'translateX(-100%)' },
           '100%': { transform: 'translateX(100%)' },
         },
+        'ping-large': {
+          '75%, 100%': {
+            transform: 'scale(3)',
+            opacity:'0',
+          }
+        }
       },
       animation: {
-      pingpong: 'pingpong 40s ease-in-out infinite',
+        'pingpong': 'pingpong 40s ease-in-out infinite',
+        'ping-large':'ping-large 1s ease-in-out infinite',
       },
     },
   },
