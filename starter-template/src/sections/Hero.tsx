@@ -18,35 +18,100 @@ export const HeroSection = () => {
         <div className="size-[820px] orbit-hero-ring"></div>
         <div className="size-[1020px] orbit-hero-ring"></div>
         <div className="size-[1220px] orbit-hero-ring"></div>
-        <HeroOrbitComponent size={800} rotation={-92}>
-          <StarIcon className="size-28 text-yellow-300" />
+        <HeroOrbitComponent
+          size={430}
+          rotation={80}
+          shouldOrbit
+          orbitDuration="32s"
+          shouldSpin
+          spingDuration="3s"
+        >
+          <SparkleIcon className="size-8 text-yellow-300/20" />
         </HeroOrbitComponent>
-        <HeroOrbitComponent size={550} rotation={100}>
-          <StarIcon className="size-12 text-yellow-300" />
-        </HeroOrbitComponent>
-        <HeroOrbitComponent size={590} rotation={18}>
-          <StarIcon className="size-8 text-yellow-300" />
-        </HeroOrbitComponent>
-        <HeroOrbitComponent size={430} rotation={80}>
-          <SparkleIcon className="size-8 text-yellow-300/20  " />
-        </HeroOrbitComponent>
-        <HeroOrbitComponent size={440} rotation={-15}>
+        <HeroOrbitComponent
+          size={440}
+          rotation={-15}
+          shouldOrbit
+          orbitDuration="34s"
+          shouldSpin
+          spingDuration="3s"
+        >
           <SparkleIcon className="size-5 text-yellow-300/20  " />
         </HeroOrbitComponent>
-        <HeroOrbitComponent size={530} rotation={-170}>
-          <SparkleIcon className="size-10 text-yellow-300/20  " />
-        </HeroOrbitComponent>
-        <HeroOrbitComponent size={710} rotation={-120}>
-          <SparkleIcon className="size-14 text-yellow-300/20  " />
-        </HeroOrbitComponent>
-        <HeroOrbitComponent size={720} rotation={150}>
-          <div className="size-3 rounded-full bg-yellow-300/20" />
-        </HeroOrbitComponent>
-        <HeroOrbitComponent size={520} rotation={-70}>
+        <HeroOrbitComponent
+          size={520}
+          rotation={-70}
+          shouldOrbit
+          orbitDuration="36s"
+        >
           <div className="size-2 rounded-full bg-yellow-300/20" />
         </HeroOrbitComponent>
-        <HeroOrbitComponent size={620} rotation={-20}>
+        <HeroOrbitComponent
+          size={530}
+          rotation={-170}
+          shouldOrbit
+          orbitDuration="38s"
+          shouldSpin
+          spingDuration="3s"
+        >
+          <SparkleIcon className="size-10 text-yellow-300/20  " />
+        </HeroOrbitComponent>
+        <HeroOrbitComponent
+          size={550}
+          rotation={100}
+          shouldOrbit
+          orbitDuration="40s"
+          shouldSpin
+          spingDuration="6s"
+        >
+          <StarIcon className="size-12 text-yellow-300" />
+        </HeroOrbitComponent>
+        <HeroOrbitComponent
+          size={590}
+          rotation={18}
+          shouldOrbit
+          orbitDuration="42s"
+          shouldSpin
+          spingDuration="6s"
+        >
+          <StarIcon className="size-8 text-yellow-300" />
+        </HeroOrbitComponent>
+        <HeroOrbitComponent
+          size={620}
+          rotation={-20}
+          shouldOrbit
+          orbitDuration="44s"
+        >
           <div className="size-3 rounded-full bg-yellow-300/20" />
+        </HeroOrbitComponent>
+        <HeroOrbitComponent
+          size={710}
+          rotation={-120}
+          shouldOrbit
+          orbitDuration="46s"
+          shouldSpin
+          spingDuration="3s"
+        >
+          <SparkleIcon className="size-14 text-yellow-300/20  " />
+        </HeroOrbitComponent>
+        <HeroOrbitComponent
+          size={720}
+          rotation={150}
+          shouldOrbit
+          orbitDuration="48s"
+        >
+          <div className="size-3 rounded-full bg-yellow-300/20" />
+        </HeroOrbitComponent>
+
+        <HeroOrbitComponent
+          size={800}
+          rotation={-92}
+          shouldOrbit
+          orbitDuration="50s"
+          shouldSpin
+          spingDuration="6s"
+        >
+          <StarIcon className="size-28 text-yellow-300" />
         </HeroOrbitComponent>
       </div>
       <div className="container">
