@@ -22,25 +22,26 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-        sans: 'var(--font-sans)',
-        serif: 'var(--font-serif)'
+        sans: "var(--font-sans)",
+        serif: "var(--font-serif)",
       },
       keyframes: {
-        pingpong: {
-          '40%': { transform: 'translateX(100%)' },
-          '50%': { transform: 'translateX(-100%)' },
-          '100%': { transform: 'translateX(100%)' },
+        "move-left": {
+          "0%": { transform: "translateX(0%)" },
+
+          "100%": { transform: "translateX(-50%)" },
         },
-        'ping-large': {
-          '75%, 100%': {
-            transform: 'scale(3)',
-            opacity:'0',
-          }
-        }
+        "ping-large": {
+          "75%, 100%": {
+            transform: "scale(3)",
+            opacity: "0",
+          },
+        },
       },
       animation: {
-        'pingpong': 'pingpong 40s ease-in-out infinite',
-        'ping-large':'ping-large 1s ease-in-out infinite',
+        'pingpong': "pingpong 40s ease-in-out infinite",
+        "ping-large": "ping-large 1s ease-in-out infinite",
+        'move-left' : 'move-left 1s linear  infinite'
       },
     },
   },

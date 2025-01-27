@@ -61,11 +61,14 @@ export const ProjectsSection = () => {
         <p className="text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md mx-auto">
           See how i transformed concepts into engaging digital experiences.
         </p>
-        <div className="flex flex-col mt-10 md:mt-20  gap-20">
-          {portfolioProjects.map((project) => (
+        <div className="flex flex-col mt-10 md:mt-20  gap-20 ">
+          {portfolioProjects.map((project, proIndex) => (
             <Card
               key={project.title}
-              className=" px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 "
+              className=" px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky "
+              style={{
+                top: `calc(64px + ${proIndex * 40}px`,
+              }}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
