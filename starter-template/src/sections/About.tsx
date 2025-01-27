@@ -10,7 +10,7 @@ import ReactIcon from "@/assets/icons/react.svg";
 import ChromeIcon from "@/assets/icons/chrome.svg";
 import GitIcon from "@/assets/icons/github.svg";
 import mapImage from "@/assets/images/map.png";
-import smileEmoji from "@/assets/images/memoji-smile.png";
+import smileEmoji from "@/assets/images/Me.png";
 import Cardheader from "@/components/Cardheader";
 import ToolboxItems from "@/components/ToolboxItems";
 import { motion } from "framer-motion";
@@ -45,6 +45,12 @@ const toolBoxItems = [
 
 const hobbies = [
   {
+    title: "Riding",
+    emoji: "🏍️",
+    left: "45%",
+    top: "5%",
+  },
+  {
     title: "painting",
     emoji: "🎨",
     left: "5%",
@@ -53,7 +59,7 @@ const hobbies = [
   {
     title: "Photography",
     emoji: "📸",
-    left: "50%",
+    left: "70%",
     top: "5%",
   },
   {
@@ -92,7 +98,7 @@ export const AboutSection = () => {
   const constrainRef = useRef(null);
 
   return (
-    <div className="py-20 lg:py-28">
+    <div className="py-20 lg:py-28" id="about">
       <div className="container">
         <SectionHeader
           eyebrow="About Me"
@@ -142,7 +148,7 @@ export const AboutSection = () => {
                 {hobbies.map((hobby) => (
                   <motion.div
                     key={hobby.title}
-                    className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-yellow-300 to-green-400 rounded-full py-1.5 absolute"
+                    className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-yellow-300 to-green-400 rounded-full py-1.5 absolute cursor-grab active:cursor-grabbing "
                     style={{
                       left: hobby.left,
                       top: hobby.top,
@@ -162,7 +168,7 @@ export const AboutSection = () => {
               <Image
                 src={mapImage}
                 alt="location"
-                className="h-full w-full object-cover object-left-top"
+                className="h-full w-full object-cover object-center"
               />
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full  after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-yellow-300 to-green-400 -z-20 animate-ping [animation-duration:2s]"></div>
