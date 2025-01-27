@@ -10,7 +10,7 @@ import ReactIcon from "@/assets/icons/react.svg";
 import ChromeIcon from "@/assets/icons/chrome.svg";
 import GitIcon from "@/assets/icons/github.svg";
 import mapImage from "@/assets/images/map.png";
-import smileEmoji from "@/assets/images/Me.png";
+import smileEmoji from "@/assets/images/me.png";
 import Cardheader from "@/components/Cardheader";
 import ToolboxItems from "@/components/ToolboxItems";
 import { motion } from "framer-motion";
