@@ -1,7 +1,39 @@
+"use client";
+
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
 
 export const ContactSection = () => {
+  const emailAddress = "damforwork247@gmail.com";
+
+  const emailSubject = "Project Inquiry";
+
+  const emailBody = encodeURIComponent(
+    `Hi Dam,
+
+I'm interested in discussing a project with you.
+
+Project Type: [Please describe the type of project, e.g., Web Development, Mobile App, Design]
+Brief Description: [Please provide a short overview of your project]
+Timeline: [What is your desired timeline or deadline?]
+Budget (Optional): [If you have a budget in mind, please mention it]
+
+Looking forward to hearing from you!
+
+Best regards,
+[Your Name]
+[Your Contact Information (Optional)]
+`
+  );
+
+  const mailtoLink = `mailto:${emailAddress}?subject=${emailSubject}&body=${emailBody}`;
+
+  const handleContactClick = () => {
+    if (typeof window !== "undefined") {
+      window.location.href = mailtoLink;
+    }
+  };
+
   return (
     <div className="py-16 pt-12 lg:py-24 lg:pt-20" id="contact">
       <div className="container">
@@ -23,9 +55,12 @@ export const ContactSection = () => {
               </p>
             </div>
             <div>
-              <button className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900">
+              <button
+                onClick={handleContactClick} // Added the onClick handler here
+                className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900"
+              >
                 <span className="font-semibold">Contact Me</span>
-                <ArrowUpRightIcon className="size-4" />
+                {ArrowUpRightIcon && <ArrowUpRightIcon className="size-4" />}
               </button>
             </div>
           </div>

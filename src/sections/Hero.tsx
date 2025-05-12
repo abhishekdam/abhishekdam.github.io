@@ -1,3 +1,5 @@
+"use client";
+
 import memojiimage from "@/assets/images/memoji-computer.png";
 import Image from "next/image";
 import ArrowDwn from "@/assets/icons/arrow-down.svg";
@@ -7,6 +9,16 @@ import SparkleIcon from "@/assets/icons/sparkle.svg";
 import HeroOrbitComponent from "@/components/HeroOrbitComponent";
 
 export const HeroSection = () => {
+  const scrollTo = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <div
       className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip"
@@ -144,11 +156,17 @@ export const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+          <button
+            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl z-50"
+            onClick={() => scrollTo("project")}
+          >
             <span className="font-semibold">Explore my Work</span>
             <ArrowDwn className="size-4" />
           </button>
-          <button className="h-12 px-6 rounded-xl inline-flex items-center gap-2 border border-white bg-white text-gray-900">
+          <button
+            className="h-12 px-6 rounded-xl inline-flex items-center gap-2 border border-white bg-white text-gray-900 z-50"
+            onClick={() => scrollTo("contact")}
+          >
             <span>👋</span>
             <span className="font-semibold">Let&apos;s connect</span>
           </button>

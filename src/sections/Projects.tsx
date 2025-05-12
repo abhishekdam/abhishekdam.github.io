@@ -1,6 +1,6 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import recordedShowShopping from "@/assets/images/recordedVideoShopping.png";
-import uiForShoppableVideo from "@/assets/images/image-of-shoppable-video.webp";
+import darkSaasLandingPage from "@/assets/images/revovideohome.png";
+import recordedShowShopping from "@/assets/images/recordedVideoWebPage.png";
+import uiForShoppableVideo from "@/assets/images/shoppableVideoJuiceCory.jpg";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUprightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -9,39 +9,40 @@ import Card from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
+    company: "Revo Video",
     year: "2022",
-    title: "Dark Saas Landing Page",
+    title: "Revo Video Application",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
+    link: "https://revovideo.com/",
     image: darkSaasLandingPage,
   },
   {
     company: "RevoVideo-Live",
-    year: "2021",
+    year: "2022",
     title: "Shopping From Recorded Video",
     results: [
       { title: "Boosted sales by 20%" },
       { title: "Expanded customer reach by 35%" },
       { title: "Increased brand awareness by 15%" },
     ],
-    link: "https://youtube.com/shorts/Zzq-b48d2IY?feature=share",
+    link: "https://www.youtube.com/watch?v=MUYMyv_RYjs&list=PL5JqSC3Dq90BAjuv5C5jXrOexpDYZMuOw&index=1",
     image: recordedShowShopping,
   },
   {
     company: "RevoVideo-Streamstyle",
-    year: "2022",
+    year: "2023",
     title: "UI for in video product shopping",
     results: [
       { title: "Enhanced user experience by 90%" },
       { title: "Improved site speed by 20%" },
       { title: "Increased mobile traffic by 65%" },
     ],
-    link: "https://youtu.be/K_RKlULGnS8",
+    // link: "https://www.youtube.com/watch?v=oUSdzGehDH4&list=PL5JqSC3Dq90DQt7Le4I4QG73x_DPHJbDH",
+    link: "https://tocara.tv/popstream/7294537932456900000",
     image: uiForShoppableVideo,
   },
 ];
