@@ -4,26 +4,26 @@ import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
 
 export const ContactSection = () => {
-  const emailAddress = "damforwork247@gmail.com";
+  const emailAddress = `damforwork247@gmail.com`;
 
-  const emailSubject = "Project Inquiry";
+  const emailSubject = `Project Inquiry`;
 
   const emailBody = encodeURIComponent(
     `Hi Dam,
 
-I'm interested in discussing a project with you.
+    I'm interested in discussing a project with you.
 
-Project Type: [Please describe the type of project, e.g., Web Development, Mobile App, Design]
-Brief Description: [Please provide a short overview of your project]
-Timeline: [What is your desired timeline or deadline?]
-Budget (Optional): [If you have a budget in mind, please mention it]
+    Project Type: [Please describe the type of project, e.g., Web Development, Mobile App, Design]
+    Brief Description: [Please provide a short overview of your project]
+    Timeline: [What is your desired timeline or deadline?]
+    Budget (Optional): [If you have a budget in mind, please mention it]
 
-Looking forward to hearing from you!
+    Looking forward to hearing from you!
 
-Best regards,
-[Your Name]
-[Your Contact Information (Optional)]
-`
+    Best regards,
+    [Your Name]
+    [Your Contact Information (Optional)]
+    `
   );
 
   const mailtoLink = `mailto:${emailAddress}?subject=${emailSubject}&body=${emailBody}`;
@@ -39,7 +39,7 @@ Best regards,
       <div className="container">
         <div className="bg-gradient-to-r from-yellow-300 to-green-400 text-gray-900 py-8 px-10 rounded-3xl text-center md:text-left relative overflow-hidden z-0">
           <div
-            className="absolute inset-0 opacity-10 -z-10"
+            className="absolute inset-0 opacity-10 z-0 pointer-events-none"
             style={{
               backgroundImage: `url(${grainImage.src})`,
             }}
